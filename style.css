@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    padding-left: 80px;
+}
+.header_first{
+    width: 100%;
+    height: 200px;
+   
+.header_logo{
+    width: 50%;
+    float: left; 
+}
+}
+.logo{
+    width: 170px;
+    height: 50px;
+}
+.header_button{
+    width: 50%;
+    float: left;
+    padding-left: 300px;
+}
+#language{
+    width: 120px;
+    height: 35px;
+    background:transparent;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    margin-right: 20px;
+    text-align: center;
+    
+}
+.butt2{
+    width: 90px;
+    height:35px ;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 1.5ms;
+}
+.butt2:hover{
+    background-color: brown;
+}
+.content{
+    text-align: center;
+   line-height: 2.2;
+}
+.email{
+    width: 300px;
+     height: 50px;
+    font-size: 20px; 
+    background: transparent;
+    color: white;
+    border-radius: 6px;
+}
+.button3{
+    width:200px ;
+     height:50px ;
+     background-color: red; 
+     color: white; 
+     border-radius: 6px;
+     font-size: 20px;
+     font-weight: bolder;
+     cursor: pointer;
+}
+.card{
+    border-top: 8px gray solid;
+    padding: 50px;
+    width: 100%;
+    height: 500px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: left;
+    display: flex;
+    align-items:center ;
+    
+   }
+.img{
+    width: 50%;
+}
+.desc{
+    width: 50%;
+    line-height: 1.8;
+    letter-spacing: 0.1px; 
+}
+.h1{
+    font-size: 50px;
+}
+.h3{
+    font-size: 20px;
+}
+.faq{
+    border-top: 8px gray solid;
+    padding-top: 50px;  
+    text-align: center;
+}
+.questions{
+    margin: 60px auto;
+    width: 100%;
+   max-width: 850px;
+   height: 400px;
+}
+.questions li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;   
+}
+.questions li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition:transform 0.5s
+}
+input[type="radio"]{
+    display: none;
+}
+.questions .contents{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.questions input[type="radio"]:checked + label+ .contents{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.questions input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .email_signup{
+    max-width: 600px;
+    margin: 30px auto 60px;
+}
+.faq small{
+    font-size: 13px;
+}
+
+
+.footer{
+    padding: 50px 15% ; 
+     border-top: 8px solid #333;
+     color: #777;
+
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col1{
+  flex-basis: 1%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.row
+{
+    display: flex;
+    width:100%;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.footer .col1 a{
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    
+}
